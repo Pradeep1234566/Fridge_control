@@ -1,0 +1,64 @@
+/* Body with fridge background */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('/images/fridge.jpg'); /* Set your fridge image path */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Control panel container */
+.control-panel {
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background for better visibility */
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+/* Control elements */
+.control {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Ensures icon, value, and slider are stacked vertically */
+}
+
+/* Typography */
+h3 {
+  color: #000;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Slider width adjustment */
+.MuiSlider-root {
+  width: 150px;
+}
+
+/* Button styling */
+.MuiButton-root {
+  margin-top: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .control-panel {
+    padding: 20px;
+  }
+  .MuiSlider-root {
+    width: 120px;
+  }
+}
